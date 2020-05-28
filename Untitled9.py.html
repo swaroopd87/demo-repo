@@ -1,0 +1,141 @@
+
+# coding: utf-8
+
+# In[3]:
+
+
+n=int(input())
+i=1
+print(i)
+while i<=n-1 :
+    j=1
+    while j<= i+1 :
+        if j !=1 and j!=i+1:
+            print (0, end='')
+        else:
+            print((i), end='')
+        j=j+1
+    print()    
+    i=i+1
+
+
+# In[9]:
+
+
+n=int(input())
+i=1
+p=n
+while i<=n :
+    j=1
+    while j<= p :
+        print((j), end='')
+        j=j+1
+
+    p=p-1
+    print()    
+    i=i+1
+
+
+# In[12]:
+
+
+n=int(input())
+i=1
+while i<=n:
+    j=1
+    start_char = chr(ord('A')+i-1)
+    while j<=i:
+        #charP=chr(ord(start_char)+j-1)
+        #print(charP, end='')
+        print(start_char, end='')
+        j=j+1
+    print()
+    i=i+1
+
+
+# In[15]:
+
+
+print ("Enter the limit")
+rows = int(input())
+ 
+#top half
+k = 0
+for i in range(1, (rows/2)): 
+    # print spaces 
+    for j in range (1, (rows - i) + 1): 
+        print(end = " ") 
+	  
+        # let's print stars 
+    while k != (2 * i - 1):
+        print("*", end = "")
+        k = k + 1
+    k = 0
+	  
+    # add a line break 
+    print()  
+ 
+#bottom half
+k = 2
+m = 1
+for i in range((rows/2)+1 , rows + 1): 
+    # print spaces 
+    for j in range (1, k):
+        print(end = " ") 
+    k = k + 1
+	  
+    # print star 
+    while m <= (2 * (rows - i) - 1): 
+        print("*", end = "") 
+        m = m + 1
+    m = 1
+	
+    #add a line break
+    print() 
+
+
+# In[20]:
+
+
+print ("Enter the limit")
+rows = int(input())
+p=int(rows/2)
+ 
+#top half
+k = 0
+i=1
+j=1
+while i<=p: 
+    # print spaces 
+    while j<=((p - i) + 1): 
+        print(end = " ") 
+	  
+        # let's print stars 
+    while k != (2 * i - 1):
+        print("*", end = "")
+        k = k + 1
+    k = 0
+    i=i+1
+    j=j+1
+	  
+    # add a line break 
+    print()  
+ 
+#bottom half
+k = 2
+m = 1
+for i in range(1, rows): 
+    # print spaces 
+    for j in range (1, k):
+        print(end = " ") 
+    k = k + 1
+	  
+    # print star 
+    while m <= (2 * (rows - i) - 1): 
+        print("*", end = "") 
+        m = m + 1
+    m = 1
+	
+    #add a line break
+    print() 
+
